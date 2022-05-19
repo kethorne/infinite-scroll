@@ -52,7 +52,7 @@ function showLoading() {
 function filterPosts(ev) {
     console.log(ev.target.value);
     const term = ev.target.value.toUpperCase();
-    const posts = document.querySelectorAll('.posts');
+    const posts = document.querySelectorAll('.post');
 
     posts.forEach(post => {
         const title = post.querySelector('.post-title').innerText.toUpperCase();
